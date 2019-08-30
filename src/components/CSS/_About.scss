@@ -1,0 +1,58 @@
+.hero-grid {
+    display: grid;
+    // margin-top: 100px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(9, 10vmin);
+    grid-template-rows: repeat(9, 10vmin);
+}
+
+.squareOne {
+    border: 3px solid $dark-teal;
+    grid-column: 2 / span 5;
+    grid-row: 2 / span 4;
+}
+
+.squareTwo {
+    border: 3px solid $gold;
+    grid-column: 4 / span 5;
+    grid-row: 3 / span 4;
+}
+
+.squareThree {
+    grid-column: 4 / span 3;
+    grid-row: 3 / span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $coral;
+    // font-size: 150%;
+   font-family: 'Satisfy', cursive;
+}
+
+
+
+
+/*
+
+middle area:
+row 3 columns 3-5
+row 4 columns 2-5
+row 5 columns 3-5
+
+*/
+
+/*
+need svgs in following areas:
+    row 1 columns 1-7
+    row 2 columns 1-7
+    row 3 columns 1-2 & 6-7
+    row 4 columns 1-2 & 6-7
+    row 5 columns 1-2 & 6-7
+    row 6 columns 1-7
+    row 7 columns 1-7
+    40 total grid squares to fill
+ */

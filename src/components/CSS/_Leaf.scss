@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.container{
+    height: 15vmin;
+    width: 15vmin;
+}
+
+#leaf1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#leaf2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    stroke: $dark-teal;
+    animation: leaf-animation 7s infinite;
+}
+
+#leaf3 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    stroke: $gold;
+    animation: leaf-animation 7s infinite;
+}
+
+
+
+    
+
+.leaf{
+    height: 12vmin;
+    width: 12vmin;
+    margin: auto;
+    stroke: $coral;
+    stroke-width: .2px;
+    fill: transparent;
+    stroke-dashoffset: -3350;
+    stroke-dasharray: 3350;
+    animation: leaf-animation 7s infinite;
+}
+
+
+@keyframes leaf-animation {
+    0% {
+        stroke-dashoffset: -3350;
+    }
+    35% {
+        stroke-dashoffset: 0;   
+    }
+    65% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -3350;
+    }
+}
