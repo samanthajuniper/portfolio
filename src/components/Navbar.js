@@ -14,6 +14,11 @@ class Navbar extends Component {
     render() {
         return(
             <header id="navbar">
+                <div className="link-container is-flex">
+                    <NavLink to="/" className="is-size-6 has-text-weight-semibold  page-link ">About</NavLink>
+                    <NavLink to="/projects" className="is-size-6 has-text-weight-semibold  page-link ">Projects</NavLink>
+                    <NavLink to="/contact" className="is-size-6 has-text-weight-semibold page-link ">Resume</NavLink>
+                </div>
                 <div className="icon-container is-flex">
                     <a href=""  class="social-icon">
                         <span className="icon is-large">
@@ -31,14 +36,6 @@ class Navbar extends Component {
                         </span>
                     </a>
                 </div>
-                <div className="link-container is-flex">
-                    <NavLink to="/" className="is-size-6 has-text-weight-semibold  page-link ">About</NavLink>
-                    <NavLink to="/projects" className="is-size-6 has-text-weight-semibold  page-link ">Projects</NavLink>
-                    <NavLink to="/contact" className="is-size-6 has-text-weight-semibold page-link ">Resume</NavLink>
-                </div>
-
-
-
             </header>
 
         )
