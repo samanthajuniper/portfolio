@@ -6,7 +6,7 @@ import pdf from '../assets/SamanthaMorganResume.pdf'
 class Navbar extends Component {
     render() {
         return(
-            <header id="navbar">
+            <div id="navbar">
                 <div className="link-container is-flex">
                     <NavLink to="/" className="is-size-5 has-text-weight-bold page-link ">About</NavLink>
                     <NavLink to="/projects" className="is-size-5 has-text-weight-bold page-link ">Projects</NavLink>
@@ -29,7 +29,7 @@ class Navbar extends Component {
                         </span>
                     </a>
                 </div>
-            </header>
+            </div>
 
         )
     }

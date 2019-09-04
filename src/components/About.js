@@ -28,19 +28,18 @@ class About extends Component {
     };
 
     render() {
-            
+
         return (
-          <div>
-            <div className="hero-grid">
-                {/* <Leaf className={`leaf`} id={`leaf1`} />
+          <div id="about">
+           <div className="hero-grid">
+                 {/* <Leaf className={`leaf`} id={`leaf1`} />
                 <Leaf className={`leaf`} id={`leaf2`} />
                 <Leaf className={`leaf`} id={`leaf3`} /> */}
-                    <div className="squareOne"></div>
-                    <div className="squareTwo"></div>
-                    <div className="squareThree" onMouseEnter={this.toggleClass} onMouseLeave={this.toggleClass}>
-                        <p className="is-size-5">{this.state.text}</p>
-                    </div>
-            </div>
+
+                    <h1 class="about-title">I'm Sam</h1>
+                    <h2 class="about-subtitle">a software developer</h2>
+
+                </div>
          </div>
         );
     }

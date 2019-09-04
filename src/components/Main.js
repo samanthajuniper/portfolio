@@ -8,15 +8,12 @@ import Navbar from './Navbar';
 
 const Main = () => (
     <div>
-
         <Navbar />
-
         <Switch>
             <Route exact path="/" component={About} />
             <Route path="/projects" component={Projects} />
             <Route component={NotFound} />
         </Switch>
-
     </div>
 )
 
