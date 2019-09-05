@@ -3,28 +3,28 @@
     font-family: 'Calligraffitti', cursive;
     font-size: 250%;
     font-weight: 700;
-    .about-title {
-        grid-row: 1 / span 1;
-        grid-column: 2 / span 2;
+    // .about-title {
+    //     grid-row: 1 / span 1;
+    //     grid-column: 2 / span 2;
 
-    }
+    // }
 
-    .about-subtitle {
-        grid-row: 2 / span ;
-        grid-column: 4 / span 2;
+    // .about-subtitle {
+    //     grid-row: 2 / span ;
+    //     grid-column: 4 / span 2;
 
-    }
+    // }
 
 
-    .hero-grid {
-        display: grid;
-        width: 100vw;
-        height: 100vw;
-        justify-content: center;
-        align-content: center;
-        grid-template-columns: repeat(9, 10vmin);
-        grid-template-rows: repeat(9, 10vmin);
-    }
+    // .hero-grid {
+    //     display: grid;
+    //     width: 100vw;
+    //     height: 100vw;
+    //     justify-content: center;
+    //     align-content: center;
+    //     grid-template-columns: repeat(9, 10vmin);
+    //     grid-template-rows: repeat(9, 10vmin);
+    // }
 }
 
 

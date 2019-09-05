@@ -31,6 +31,8 @@ class About extends Component {
 
         return (
           <div id="about">
+
+
            <div className="hero-grid">
                  {/* <Leaf className={`leaf`} id={`leaf1`} />
                 <Leaf className={`leaf`} id={`leaf2`} />
