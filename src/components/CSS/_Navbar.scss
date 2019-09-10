@@ -3,7 +3,6 @@
     top:0;
     right:0;
     border: 25px solid transparent;
-
     .link-container {
         justify-content: flex-end;
         margin-bottom: 20px;
@@ -23,18 +22,16 @@
         a {
             color: white;
             opacity: .9;
-            &.github:hover{
+            &.github:hover {
                 color:black;
             }
-            &.linkedin:hover{
+            &.linkedin:hover {
                 color:#2667BC
             }
-            &.mail:hover{
+            &.mail:hover {
                 color: $dark-teal;
             }
-
         }
-
         }
         .social-icon {
             margin-bottom: 20px;
