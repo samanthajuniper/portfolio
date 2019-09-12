@@ -1,24 +1,93 @@
 
 #about {
-    // font-family: 'Calligraffitti', cursive;
-    font-family: sans-serif;
-    font-size: 250%;
-    font-weight: 700;
 
-    .title-div {
-        margin-top: 70px;
-        margin-left: 70px;
-        .tagline {
-            &-hidden {
-                display: none;
-            }
-            &-visible {
-                display: block;
-            font-family: sans-serif;
-            }
+    .header-wrapper {
+        flex-direction: column;
+        position: absolute;
+        width: 300px;
+        top: 20%;
+    
+        // font-family: 'Calligraffitti', cursive;
+        font-family: sans-serif;
+        font-weight: 700;
+
+    .tagline {
+        &-div {
+            align-self: flex-end;
+            // position: absolute;
+            // top:35%;               
+            // left:14%; 
+            // @media(max-width: $widescreen) {
+            //     left: 23%;  
+            // }
+            // @media(max-width: $desktop) {
+            //     left: 21%;  
+            // }
+            //  @media(max-width: $phablet) {
+            //     top: 32%; 
+            //     left: 35%; 
+            // }
+           
+            // @media(max-width: $phone) {
+            //     left: 4%;
+            //     top: 32%
+            // }
+           
         }
-        .name {
+        &-hidden {
+            display: none;
+        }
+       &-visible {
+            display: block;
+            font-family: sans-serif;
             color: $dark-teal;
+            font-size: 25px;
+
+
+            // @media(max-width: $desktop) {
+            //    font-size: 40px;  
+            // }
+            // @media(max-width: $tablet) {
+            //     font-size: 35px;   
+            // }
+            // @media(max-width: $phablet) {
+            //     font-size: 25px;   
+            // }
+            // @media(max-width: $phone) {
+            //     font-size: 30px;   
+            // }
+        }
+    }
+    .title-div {
+        // position: absolute;
+        // top:25%;
+        // left:3%;
+     
+        // @media(max-width: $desktop) {
+        //     left: 10%;  
+        // }
+        // @media(max-width: $phablet) {
+        //     top:22%  
+        // }
+        // @media(max-width: $phone) {
+        //    left: 23%
+        // }
+        .name {
+            color: $coral;
+            font-size: 45px;
+            // font-size: 80px;
+            // @media(max-width: $desktop) {
+            //    font-size: 70px;  
+            // }
+            //  @media(max-width: $tablet) {
+            //     font-size: 65px;   
+            // }
+            // @media(max-width: $phablet) {
+            //     font-size: 55px;   
+            // }
+            // @media(min-width: $phone) {
+            //     font-size: 40px;   
+            // }
             &::after {
                 color:white;
                 overflow: hidden;
@@ -26,7 +95,7 @@
                 vertical-align: bottom;
                 margin-left: 15px;
                 -webkit-animation: ellipsis 2000ms steps(4,end) 1;  
-                -webkit-animation-fill-mode: forwards;    
+                // -webkit-animation-fill-mode: forwards;    
                 content: "\2026"; 
                 width:0;
                 font-size: 50px;
@@ -43,7 +112,7 @@
             }
         }
     }
-   
+   }
 }
   
     // .about-title {

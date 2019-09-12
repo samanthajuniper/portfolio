@@ -32,20 +32,15 @@ class About extends Component {
 
         return (
           <div id="about">
-
-
-           <div className="hero-grid">
-                 {/* <Leaf className={`leaf`} id={`leaf1`} />
-                <Leaf className={`leaf`} id={`leaf2`} />
-                <Leaf className={`leaf`} id={`leaf3`} /> */}
-            <div className="title-div">
-                
-                <h1 className="name title is-1">I'm Sam</h1>
-                <h1 id="tagline" className={this.state.class}>{this.state.tagline}</h1>
-            </div>
-
+            <div className="header-wrapper is-flex">
+                <div className="title-div">
+                    <h1 className="name title">I'm Sam</h1>
                 </div>
-         </div>
+                <div className="tagline-div">
+                    <h1 id="tagline" className={this.state.class}>{this.state.tagline}</h1>
+                </div>
+            </div>
+        </div>
         );
     }
 }
