@@ -1,31 +1,32 @@
 import React, { Component } from "react";
 import Leaf from './Leaf'
 import Navbar from './Navbar';
+const logo = require('../assets/introImage.png');
+
 
 class About extends Component {
-    constructor() {
-        super()
-        this.state= {
-            isTagLineVisible: false,
-            text: "I am Sam",
-            // changeSquareThreeClass: "squareThree"
-        };
+    constructor(props) {
+        super(props);
+            this.state = {
+            tagline: '',
+            class: 'tagline-hidden'
+        }
     }
 
-    toggleClass = () => {
-        this.setState(prevState => ({ isTagLineVisible: !prevState.isTagLineVisible }));
-        if(this.state.isTagLineVisible === true) {
+    showtagline(){
+        setTimeout(() => {
             this.setState({
-                text: "I'm Sam",
-                // changeSquareThreeClass: "squareThree"
+                tagline: 'a software developer.',
+                class: 'tagline-visible'
             })
-        } else {
-            this.setState({
-                text: "a software developer",
-                // changeSquareThreeClass: "squareThreeActive"
-            })
-        }
+              console.log('Our data is fetched');
+            }, 2000)
     };
+
+      componentDidMount() {
+        this.showtagline();
+    }
+
 
     render() {
 
@@ -37,9 +38,11 @@ class About extends Component {
                  {/* <Leaf className={`leaf`} id={`leaf1`} />
                 <Leaf className={`leaf`} id={`leaf2`} />
                 <Leaf className={`leaf`} id={`leaf3`} /> */}
-
-                    <h1 class="about-title">I'm Sam</h1>
-                    <h2 class="about-subtitle">a software developer</h2>
+            <div className="title-div">
+                
+                <h1 className="name title is-1">I'm Sam</h1>
+                <h1 id="tagline" className={this.state.class}>{this.state.tagline}</h1>
+            </div>
 
                 </div>
          </div>

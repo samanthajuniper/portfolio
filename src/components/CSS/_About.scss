@@ -1,8 +1,51 @@
 
 #about {
-    font-family: 'Calligraffitti', cursive;
+    // font-family: 'Calligraffitti', cursive;
+    font-family: sans-serif;
     font-size: 250%;
     font-weight: 700;
+
+    .title-div {
+        margin-top: 70px;
+        margin-left: 70px;
+        .tagline {
+            &-hidden {
+                display: none;
+            }
+            &-visible {
+                display: block;
+            font-family: sans-serif;
+            }
+        }
+        .name {
+            color: $dark-teal;
+            &::after {
+                color:white;
+                overflow: hidden;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-left: 15px;
+                -webkit-animation: ellipsis 2000ms steps(4,end) 1;  
+                -webkit-animation-fill-mode: forwards;    
+                content: "\2026"; 
+                width:0;
+                font-size: 50px;
+            }
+            @keyframes ellipsis {
+                to {
+                    width: 1.5em;  
+                }
+            }
+            @keyframes ellipsis {
+                to {
+                    width: 1.5em;  
+                }
+            }
+        }
+    }
+   
+}
+  
     // .about-title {
     //     grid-row: 1 / span 1;
     //     grid-column: 2 / span 2;
@@ -25,7 +68,7 @@
     //     grid-template-columns: repeat(9, 10vmin);
     //     grid-template-rows: repeat(9, 10vmin);
     // }
-}
+
 
 
 
