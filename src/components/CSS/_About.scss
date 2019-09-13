@@ -1,38 +1,33 @@
-
 #about {
-
     .header-wrapper {
-        flex-direction: column;
-        position: absolute;
-        width: 300px;
-        top: 20%;
-    
-        // font-family: 'Calligraffitti', cursive;
         font-family: sans-serif;
         font-weight: 700;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        @media(min-width: $phone) {
+            min-width: $phone;
+            padding:0 10px;
+        }
+        @media(min-width: $phablet) {
+             min-width: $phablet;
+             padding: 0 85px;
+        }
+        @media(min-width: $tablet) {
+            min-width: $tablet;
+            padding: 0 74px;
+        }
+        @media(min-width: $desktop) {
+            min-width: $desktop;
+            padding: 0 116px;
+        }
+    
+        // font-family: 'Calligraffitti', cursive;
+       
 
     .tagline {
         &-div {
-            align-self: flex-end;
-            // position: absolute;
-            // top:35%;               
-            // left:14%; 
-            // @media(max-width: $widescreen) {
-            //     left: 23%;  
-            // }
-            // @media(max-width: $desktop) {
-            //     left: 21%;  
-            // }
-            //  @media(max-width: $phablet) {
-            //     top: 32%; 
-            //     left: 35%; 
-            // }
-           
-            // @media(max-width: $phone) {
-            //     left: 4%;
-            //     top: 32%
-            // }
-           
+            align-self: flex-end;           
         }
         &-hidden {
             display: none;
@@ -42,23 +37,37 @@
             font-family: sans-serif;
             color: $dark-teal;
             font-size: 25px;
+            @media(min-width: $phablet) {
+                font-size: 35px;   
+            }
+            @media(min-width: $tablet) {
+                font-size: 55px;   
+            }
+            @media(min-width: $desktop) {
+               font-size: 65px;  
+            }
+        
 
-
-            // @media(max-width: $desktop) {
-            //    font-size: 40px;  
-            // }
-            // @media(max-width: $tablet) {
-            //     font-size: 35px;   
-            // }
-            // @media(max-width: $phablet) {
-            //     font-size: 25px;   
-            // }
-            // @media(max-width: $phone) {
-            //     font-size: 30px;   
-            // }
         }
     }
     .title-div {
+        justify-content: flex-start;
+        @media(min-width: $phone) {
+            height: 50px;
+        }
+         @media(min-width: $phablet) {
+            height: 65px;   
+        }
+        @media(min-width: $tablet) {
+            height: 85px;   
+        }
+         @media(min-width: $desktop) {
+            height: 95px;   
+        }
+        // @media(min-width: $phablet) {
+        //     align-self: flex-start;  
+        // }
+
         // position: absolute;
         // top:25%;
         // left:3%;
@@ -75,6 +84,18 @@
         .name {
             color: $coral;
             font-size: 45px;
+            @media(min-width: $phablet) {
+                font-size: 55px;   
+            }
+            @media(min-width: $tablet) {
+                font-size: 75px;   
+            }
+            @media(min-width: $desktop) {
+               font-size: 85px;  
+            }
+
+        }
+
             // font-size: 80px;
             // @media(max-width: $desktop) {
             //    font-size: 70px;  
@@ -82,36 +103,35 @@
             //  @media(max-width: $tablet) {
             //     font-size: 65px;   
             // }
-            // @media(max-width: $phablet) {
-            //     font-size: 55px;   
-            // }
+           
             // @media(min-width: $phone) {
             //     font-size: 40px;   
             // }
-            &::after {
-                color:white;
-                overflow: hidden;
-                display: inline-block;
-                vertical-align: bottom;
-                margin-left: 15px;
-                -webkit-animation: ellipsis 2000ms steps(4,end) 1;  
-                // -webkit-animation-fill-mode: forwards;    
-                content: "\2026"; 
-                width:0;
-                font-size: 50px;
-            }
-            @keyframes ellipsis {
-                to {
-                    width: 1.5em;  
+            .ellipsis {
+                width: 50px;
+                &:after {
+                    color:white;
+                    overflow: hidden;
+                    display: inline-block;
+                    margin-left: 5px;
+                    -webkit-animation: ellipsis 2000ms steps(4,end) 1;  
+                    // -webkit-animation-fill-mode: forwards;    
+                    content: "\2026"; 
+                    width:0;
+                    font-size: 45px;
                 }
-            }
-            @keyframes ellipsis {
-                to {
-                    width: 1.5em;  
+                @keyframes ellipsis {
+                    to {
+                        width: 1.5em;  
+                    }
                 }
-            }
-        }
-    }
+                @keyframes ellipsis {
+                    to {
+                        width: 1.5em;  
+                    }
+                }
+            } 
+         }
    }
 }
   

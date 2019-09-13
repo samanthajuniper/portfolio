@@ -33,8 +33,9 @@ class About extends Component {
         return (
           <div id="about">
             <div className="header-wrapper is-flex">
-                <div className="title-div">
-                    <h1 className="name title">I'm Sam</h1>
+                <div className="title-div is-flex">
+                    <div className="name title"><h1>I'm Sam</h1></div>
+                    <div className="ellipsis"></div>
                 </div>
                 <div className="tagline-div">
                     <h1 id="tagline" className={this.state.class}>{this.state.tagline}</h1>
