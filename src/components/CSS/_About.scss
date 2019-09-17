@@ -64,23 +64,6 @@
          @media(min-width: $desktop) {
             height: 95px;   
         }
-        // @media(min-width: $phablet) {
-        //     align-self: flex-start;  
-        // }
-
-        // position: absolute;
-        // top:25%;
-        // left:3%;
-     
-        // @media(max-width: $desktop) {
-        //     left: 10%;  
-        // }
-        // @media(max-width: $phablet) {
-        //     top:22%  
-        // }
-        // @media(max-width: $phone) {
-        //    left: 23%
-        // }
         .name {
             color: $coral;
             font-size: 45px;
@@ -93,20 +76,7 @@
             @media(min-width: $desktop) {
                font-size: 85px;  
             }
-
-        }
-
-            // font-size: 80px;
-            // @media(max-width: $desktop) {
-            //    font-size: 70px;  
-            // }
-            //  @media(max-width: $tablet) {
-            //     font-size: 65px;   
-            // }
-           
-            // @media(min-width: $phone) {
-            //     font-size: 40px;   
-            // }
+         }
             .ellipsis {
                 width: 50px;
                 &:after {
@@ -117,8 +87,11 @@
                     -webkit-animation: ellipsis 2000ms steps(4,end) 1;  
                     // -webkit-animation-fill-mode: forwards;    
                     content: "\2026"; 
-                    width:0;
+                    width: 0;
                     font-size: 45px;
+                    @media(min-width: $desktop) {
+                        font-size: 70px;  
+                    }   
                 }
                 @keyframes ellipsis {
                     to {

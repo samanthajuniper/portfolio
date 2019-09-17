@@ -1,11 +1,10 @@
 #navbar {
-    position: absolute;
-    top:0;
-    right:0;
-    border: 25px solid transparent;
+   
     .link-container {
-        justify-content: flex-end;
-        margin-bottom: 20px;
+        position: absolute;
+        top:0;
+        right:0;
+        border: 25px solid transparent;
         a {
             color: $dark-teal;
             &:hover {
@@ -13,27 +12,48 @@
             }
         }
         .page-link {
+            @media(min-width: $phone) {
+                margin-left: 10px;
+            }
             margin-left: 30px;
+        }
+        @media(min-width: $phone) {
+            border: 10px solid transparent;
         }
     }
     .icon-container {
+        position: absolute;
+        
+         top:40px;
+        right:0;
+        border: 25px solid transparent;
+        @media(min-width: $phone) {
+            border: 10px solid transparent;
+        }
         flex-direction: column;
         align-items: flex-end;
         a {
-            color: white;
-            opacity: .9;
             &.github:hover {
-                color:black;
+                color: black;
             }
             &.linkedin:hover {
-                color:#2667BC
+                color: #2667BC
             }
             &.mail:hover {
                 color: $dark-teal;
             }
         }
+        @media(max-width: $phablet) {
+            // top:0;
+            flex-direction: row;  
         }
+    }
         .social-icon {
+            color: white;
+            opacity: .9;
             margin-bottom: 20px;
+            @media(min-width: $phone) {
+                margin-left: 12px;
+            }
         }
     }
